@@ -1,0 +1,30 @@
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    flex:0 1 256px;
+    padding: 20px;
+    float: left;
+    
+    
+}
+nav a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 8;
+    background-color:#9F4F4C;
+    color: #F5EDED;
+    font-size: 18px;
+}
+
+nav a:hover {
+    box-shadow: 0 2px 5px -2px black;
+}

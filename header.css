@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-nav {
+    display: flex;
+    background-color: #9F4F4C;
+    justify-content: space-between;
+    height: 40px;
+    padding-top: 5px;
+    
+}
+
+.sub-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+.full-width {
+    display: none;
+    
+}
+
+.short-width {
+    display: flex; 
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row; 
+    list-style: none;
+    text-decoration: none;
+    
+
+    
+}
+
+.nav-list a {
+   padding: 5px;
+   border-right: solid white 1px;
+   text-decoration: none;
+   color:#FFFFFF;
+   font-size: 13px;
+}
+
+.nav-list li:last-of-type a{
+    border-right: 0px;
+
+
+}
+
+input {
+    border: none;
+    padding-right: 100px;
+    margin-left: 0px;
+    border-bottom: solid#9F4F4C 2px;
+    height: 35px;
+    margin-top: 12px;
+    display:flex;
+    justify-content: flex-end;
+    flex-grow: 0;
+    
+}
+
+button {
+    box-shadow: 0px 0px 5px 0px black;
+    border: none;
+    background-color: #9F4F4C;
+    color: #FFFFFF;
+    height: 35px;
+    margin-top: 12px;
+    width: 35px;
+    margin-right: 50px
+    
+}
+
+.search-form {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    
+}
+.company-name {
+    display:flex;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-right:37px;
+    margin-left: 35px;
+    color: #9F4F4C;
+    text-align: center;
+    padding:10px;
+    flex-grow: 0;
+    justify-content: flex-start;
+    float: left;
+}
+
+.credit-offer {
+    display:flex;
+    justify-content: flex-end;
+    border: solid 1px;
+    padding: 7px;
+    background-color:red;
+    color: #FFFFFF;
+    font-size: 15px;
+    text-decoration: none;
+    box-shadow: 0px 5px 8px -6px black;
+    margin-right: 10px;
+    margin-top: 18px;
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .full-width {
+        display: none;
+    }
+    
+}
+
+@media (min-width: 769px) {
+    .short-width {
+        display: none;
+    }
+
+    .full-width {
+        display: flex;
+    }
+}
+
+@media (max-width: 768px) {
+    .credit-offer {
+        display: none; 
+    }
+}
